@@ -26,13 +26,29 @@ Uma empresa de e-commerce deseja aprimorar sua estratégia de vendas e precisa e
     ```bash
     cd ml-ecommerce-sales-analysis
     ```
-3. Instale as dependências necessárias (Pandas, Scikit-learn, Matplotlib):
+3. Crie um ambiente virtual:
     ```bash
-    pip install -r requirements.txt
+    python -m venv .venv
     ```
-4. Execute o script principal:
+4. Ative o ambiente virtual:
     ```bash
-    python src/main.py
+    # No Windows:
+    .\.venv\Scripts\activate
+
+    # No macOS e Linux:
+    source .venv/bin/activate
+    ```
+5. Instale as dependências necessárias (Pandas, Scikit-learn, Matplotlib):
+    ```bash
+    pip install .
+    ```
+6. Execute os Testes Unitários (etapa opcional):
+    ```bash
+    python -m unittest
+    ```
+7. Execute o script principal:
+    ```bash
+    python .\src\main.py
     ```
 
  ## Licença

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml-ecommerce-sales-analysis"
+version = "0.1.0"
+description = "Previsão de receita de e-commerce usando Regressão Linear Simples."
+readme = "README.pt-br.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Cesar Augusto Suchoj Fernandes", email = "cesar.suchoj@gmail.com"}
+]
+dependencies = [
+    "pandas>=2.2.0",
+    "scikit-learn>=1.4.0",
+    "numpy>=1.26.3",
+    "matplotlib>=3.8.2"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+]

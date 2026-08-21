@@ -26,11 +26,27 @@ An e-commerce company wants to improve its sales strategy and needs to understan
     ```bash
     cd ml-ecommerce-sales-analysis
     ```
-3. Install the required libraries (Pandas, Scikit-learn, Matplotlib):
+3. Create a virtual environment:
     ```bash
-    pip install -r requirements.txt
+    python -m venv .venv
     ```
-4. Run the Python script:
+4. Activate the virtual environment:
+    ```bash
+    # On Windows:
+    venv\Scripts\activate
+
+    # On macOS and Linux:
+    source venv/bin/activate
+    ```
+5. Install the required libraries (Pandas, Scikit-learn, Matplotlib):
+    ```bash
+    pip install .
+    ```
+6. Run the Unity Tests (optional step):
+    ```bash
+    python -m unittest
+    ```
+7. Run the Python script:
     ```bash
     python src/main.py
     ```
